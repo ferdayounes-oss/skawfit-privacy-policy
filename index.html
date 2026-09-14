@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - SkawFit</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --text-color: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-color: #0ea5e9;
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+            --border-color: #1f2937;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header img {
+            width: 110px;
+            height: 110px;
+            border-radius: 24px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.2);
+            border: 2px solid var(--accent-color);
+        }
+        h1 {
+            color: var(--text-color);
+            font-size: 30px;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 35px;
+            text-align: center;
+            background: rgba(14, 165, 233, 0.05);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        h2 {
+            color: var(--accent-color);
+            font-size: 21px;
+            margin-top: 40px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            font-weight: 700;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 15.5px;
+        }
+        ul {
+            padding-right: 25px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        .badge {
+            background: rgba(14, 165, 233, 0.1);
+            color: var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 13.5px;
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .cta-box {
+            background: rgba(14, 165, 233, 0.08);
+            border: 1px dashed var(--accent-color);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" style="text-align: right;">
+    <div class="header">
+        <img src="favicon.png" alt="SkawFit Logo">
+        <h1>سياسة الخصوصية لتطبيق SkawFit</h1>
+        <div class="meta-info">تاريخ السريان: 14 سبتمبر 2026 &bull; المطور: Younes AITNASSAR</div>
+    </div>
+
+    <p>يولي تطبيق <span class="highlight">SkawFit</span> (معرف الحزمة: <span class="badge">com.skaw.skawfit</span>) أهمية قصوى لخصوصية مستخدميه. توضح وثيقة سياسة الخصوصية هذه ب شفافية تامة طبيعة البيانات التي نجمعها، كيف نستخدمها، نطاق حمايتها، والخيارات المتاحة لك بشأنها عند استخدامك للتطبيق على نظام أندرويد.</p>
+
+    <h2>1. معلومات الهوية وبيانات الحساب</h2>
+    <p>لتمكينك من الاستفادة القصوى من ميزات المتابعة والتخصيص، نقوم بجمع البيانات التالية:</p>
+    <ul>
+        <li><span class="highlight">بيانات الحساب الشخصي:</span> الاسم، البريد الإلكتروني، وصورة الحساب عند استخدام تسجيل الدخول عبر Google Sign-In أو مصادقة Firebase Auth.</li>
+        <li><span class="highlight">الملف البدني والصحي:</span> العمر، الجنس، الطول، الوزن الحالي والمستهدف، مستوى النشاط البدني، معدل الالتزام، إصابات الجسم (مع تفاصيل إضافية مدخلة يدوياً)، وأنظمة الحمية أو الحساسية الغذائية.</li>
+        <li><span class="highlight">بيانات الأداء الاجتماعي:</span> معرف المستخدم الفريد (<span class="highlight">SkawFit ID</span>)، اسم العرض، درجات اللياقة (<span class="highlight">BodyScore</span>)، والسلسلة اليومية (<span class="highlight">Streak</span>) التي تظهر للمجتمع الرقمي داخل التطبيق.</li>
+    </ul>
+
+    <h2>2. التكامل مع Android Health Connect والبيانات الصحية</h2>
+    <p>يتكامل التطبيق مع إطار عمل <span class="highlight">Android Health Connect</span> لقراءة مزامنة القياسات الصحية الحيوية (مثل: وزن الجسم، الخطوات، السعرات الحرارية، ونبضات القلب) بغرض تتبع تقدمك وتحديث خططك التدريبية والغذائية ديناميكياً.</p>
+    <ul>
+        <li>نحن نقوم بـ <span class="highlight">قراءة</span> هذه البيانات فقط بناءً على إذن صريح ومباشر منك.</li>
+        <li><span class="highlight">لا يتم أبداً</span> بيع أو مشاركة بيانات Health Connect مع أي جهات خارجية لأغراض إعلانية أو تجارية أو وساطة بيانات.</li>
+    </ul>
+
+    <h2>3. معالجة الكاميرا والذكاء الاصطناعي (Gemini)</h2>
+    <ul>
+        <li><span class="highlight">الكاميرا لتحليل الوضعية:</span> تُستخدم الكاميرا محلياً على جهازك حصرياً لمعالجة وتحليل وضعية الجسم (Posture Analysis). <span class="highlight">لا يتم أبداً رفع أو تخزين أي إطارات فيديو أو صور شخصية</span> إلى خوادم سحابية.</li>
+        <li><span class="highlight">الذكاء الاصطناعي:</span> يتم إرسال بيانات القياسات والنصوص المختارة فقط إلى نموذج الذكاء الاصطناعي (Gemini عبر Cloud Functions) لتوليد الخطط المخصصة، دون إرفاق بريدك الإلكتروني أو هويتك الشخصية الصريحة.</li>
+    </ul>
+
+    <h2>4. خدمات الأطراف الثالثة والتقنيات المستخدمة</h2>
+    <p>يعتمد التطبيق على حزم وبنى تحتية معتمدة لضمان استقرار الخدمة وتشغيلها، وتشمل:</p>
+    <ul>
+        <li><span class="highlight">Google Firebase:</span> لإدارة قواعد البيانات (Firestore)، التخزين السحابي، المصادقة، وإشعارات النظام (FCM).</li>
+        <li><span class="highlight">Google AdMob:</span> لعرض الإعلانات الملائمة مع التزام كامل بموافقات المستخدم الأوروبية والمحلية (UMP) واستخدام معرف الإعلانات (Advertising ID).</li>
+        <li><span class="highlight">Firebase Crashlytics & Firelog:</span> لجمع تقارير الأعطال التشخيصية التقنية بمعزل تام عن هويتك أو بياناتك الصحية الحساسة.</li>
+        <li><span class="highlight">Open-Meteo API:</span> لجلب بيانات الطقس المحلية بناءً على الموقع التقريبي (Coarse Location) لتحسين تجربة التمارين الخارجية.</li>
+    </ul>
+
+    <h2>5. أمان وحماية البيانات</h2>
+    <p>نعتمد معايير أمان هندسية متقدمة تشمل التخزين المشفر الآمن (SecureStorage)، بروتوكولات الاتصال المشفرة المشددة (HTTPS)، ومنع النسخ الاحتياطي غير المصرح به للبيانات الحساسة على مستوى النظام لضمان الحفاظ على سرية معلوماتك.</p>
+
+    <h2>6. سياسة الأطفال</h2>
+    <p>لا يستهدف تطبيق SkawFit الأفراد دون سن 13 عاماً، ولا نقوم عن قصد بجمع بيانات شخصية تخص هذه الفئة العمرية. في حال اكتشاف أي بيانات متعلقة بطفل، يتم حذفها فوراً.</p>
+
+    <h2>7. حقوقك وحذف الحساب والبيانات</h2>
+    <p>يحق لك دائماً التحكم الكامل ببياناتك، بما في ذلك طلب الحذف النهائي لحسابك وكافة السجلات المرتبطة به من خوادمنا السحابية.</p>
+    
+    <div class="cta-box">
+        <p style="margin: 0 0 10px 0; color: var(--text-color);">يمكنك تقديم طلب الحذف الفوري والآلي عبر صفحة الويب المخصصة المعتمدة:</p>
+        <a href="https://ferdayounes-oss.github.io/skawfit-account-deletion/" target="_blank">زيارة صفحة حذف الحساب والبيانات لـ SkawFit</a>
+    </div>
+    
+    <p style="margin-top: 15px;">كما يمكنك مراسلتنا مباشرة عبر البريد الإلكتروني أدناه لطلب سحب الموافقة أو حذف البيانات، وسنستجيب لطلبك في الأطر الزمنية المحددة:</p>
+
+    <h2>8. التواصل مع المطور</h2>
+    <p>للاستفسارات القانونية أو المتعلقة بالخصوصية، يرجى التواصل معنا عبر البريد الإلكتروني الرسمي:</p>
+    <p style="text-align: center;"><span class="badge" style="font-size: 16px; padding: 6px 12px;">ferdayounes@gmail.com</span></p>
+
+    <div class="footer">
+        &copy; 2026 SkawFit. Developed by Younes AITNASSAR. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
