@@ -1,187 +1,1143 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SkawFit</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        :root {
-            --bg-color: #0b0f19;
-            --card-bg: #111827;
-            --text-color: #f3f4f6;
-            --text-muted: #9ca3af;
-            --accent-color: #0ea5e9;
-            --border-color: #1f2937;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.9;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 50px;
-            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.5);
-            text-align: left;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .header img {
-            width: 110px;
-            height: 110px;
-            border-radius: 24px;
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.2);
-            border: 2px solid var(--accent-color);
-        }
-        h1 {
-            color: var(--text-color);
-            font-size: 30px;
-            margin-bottom: 8px;
-            font-weight: 800;
-        }
-        .meta-info {
-            color: var(--text-muted);
-            font-size: 14px;
-            margin-bottom: 35px;
-            text-align: center;
-            background: rgba(14, 165, 233, 0.05);
-            padding: 10px;
-            border-radius: 8px;
-            display: inline-block;
-        }
-        h2 {
-            color: var(--accent-color);
-            font-size: 21px;
-            margin-top: 40px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
-            font-weight: 700;
-        }
-        p, li {
-            color: var(--text-muted);
-            font-size: 15.5px;
-        }
-        ul {
-            padding-left: 25px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .highlight {
-            color: var(--text-color);
-            font-weight: 600;
-        }
-        .badge {
-            background: rgba(14, 165, 233, 0.1);
-            color: var(--accent-color);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-family: monospace;
-            font-size: 14px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 25px;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-muted);
-            font-size: 13.5px;
-        }
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .cta-box {
-            background: rgba(14, 165, 233, 0.08);
-            border: 1px dashed var(--accent-color);
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy — SkawFit</title>
+
+  <meta
+    name="description"
+    content="SkawFit Privacy Policy — how SkawFit collects, uses, protects, retains, and deletes information."
+  >
+
+  <meta name="theme-color" content="#080A0D">
+
+  <!-- SkawFit App Icon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <style>
+    :root {
+      --bg: #07090c;
+      --surface: #101419;
+      --surface-2: #0c1014;
+      --border: #252b33;
+      --text: #f5f7fa;
+      --muted: #a9b1bb;
+      --gold: #f4c44f;
+      --gold-soft: rgba(244, 196, 79, 0.10);
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          #20262f 0%,
+          #0c1015 34%,
+          var(--bg) 70%
+        );
+      color: var(--text);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(100% - 32px, var(--max-width));
+      margin: auto;
+    }
+
+    /* Header */
+
+    header {
+      text-align: center;
+      padding: 70px 0 55px;
+    }
+
+    .app-icon {
+      width: 82px;
+      height: 82px;
+      border-radius: 22px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 20px 55px rgba(0,0,0,.45);
+    }
+
+    .brand {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 1;
+      letter-spacing: -.045em;
+      margin: 0 0 20px;
+    }
+
+    .subtitle {
+      max-width: 720px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 24px;
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.035);
+      color: #cbd2da;
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-size: 12px;
+    }
+
+    /* Layout */
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    nav {
+      position: sticky;
+      top: 18px;
+      background: rgba(16,20,25,.88);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 15px;
+    }
+
+    nav .nav-title {
+      color: #8f98a3;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 7px 10px 10px;
+    }
+
+    nav a {
+      display: block;
+      color: #cbd2da;
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,.06);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Sections */
+
+    section {
+      background:
+        linear-gradient(
+          180deg,
+          var(--surface),
+          var(--surface-2)
+        );
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      margin-bottom: 16px;
+      box-shadow: 0 14px 45px rgba(0,0,0,.18);
+    }
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: 23px;
+      line-height: 1.3;
+      letter-spacing: -.025em;
+    }
+
+    h3 {
+      margin: 23px 0 8px;
+      font-size: 16px;
+    }
+
+    p,
+    li {
+      color: #c2cad3;
+      font-size: 15px;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    strong {
+      color: #f1f3f5;
+    }
+
+    code {
+      color: var(--gold);
+      background: rgba(255,255,255,.05);
+      border-radius: 6px;
+      padding: 2px 6px;
+    }
+
+    .notice {
+      border-left: 3px solid var(--gold);
+      background: var(--gold-soft);
+      border-radius: 0 13px 13px 0;
+      padding: 14px 17px;
+      margin: 18px 0;
+    }
+
+    .contact {
+      display: grid;
+      gap: 7px;
+    }
+
+    footer {
+      text-align: center;
+      color: #727c87;
+      font-size: 13px;
+      padding: 35px 0 50px;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 760px) {
+
+      .container {
+        width: min(100% - 22px, var(--max-width));
+      }
+
+      header {
+        padding: 45px 0 35px;
+      }
+
+      .app-icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 19px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: relative;
+        top: auto;
+      }
+
+      section {
+        padding: 22px 19px;
+        border-radius: 18px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      p,
+      li {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="header">
-        <img src="favicon.png" alt="SkawFit Logo">
-        <h1>Privacy Policy for SkawFit</h1>
-        <div class="meta-info">Effective Date: September 14, 2026 &bull; Developer: Younes AITNASSAR</div>
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <header>
+
+      <img
+        src="favicon.png"
+        alt="SkawFit app icon"
+        class="app-icon"
+      >
+
+      <div class="brand">
+        SkawLabs · SkawFit
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        This Privacy Policy explains how SkawFit collects, uses,
+        protects, retains, and deletes information when you use
+        the SkawFit fitness and nutrition application.
+      </p>
+
+      <div class="meta">
+        <span class="pill">
+          Effective: September 15, 2026
+        </span>
+
+        <span class="pill">
+          Last Updated: September 15, 2026
+        </span>
+
+        <span class="pill">
+          Android · com.skaw.skawfit
+        </span>
+      </div>
+
+    </header>
+
+
+    <div class="layout">
+
+      <!-- NAVIGATION -->
+
+      <nav>
+
+        <div class="nav-title">
+          Contents
+        </div>
+
+        <a href="#information">
+          Information
+        </a>
+
+        <a href="#health">
+          Health & Fitness
+        </a>
+
+        <a href="#location">
+          Location
+        </a>
+
+        <a href="#camera">
+          Camera & Speech
+        </a>
+
+        <a href="#ai">
+          AI Features
+        </a>
+
+        <a href="#sharing">
+          Sharing
+        </a>
+
+        <a href="#services">
+          Third-Party Services
+        </a>
+
+        <a href="#security">
+          Security
+        </a>
+
+        <a href="#retention">
+          Retention
+        </a>
+
+        <a href="#deletion">
+          Data Deletion
+        </a>
+
+        <a href="#rights">
+          Your Choices
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <!-- CONTENT -->
+
+      <main>
+
+        <!-- 1 -->
+
+        <section id="information">
+
+          <h2>
+            1. Information We Collect
+          </h2>
+
+          <p>
+            SkawFit may process information you provide,
+            information generated through your use of the app,
+            and technical information required to operate,
+            secure, and improve the service.
+          </p>
+
+          <h3>
+            Account and Identity Information
+          </h3>
+
+          <ul>
+            <li>Name or display name</li>
+            <li>Email address</li>
+            <li>Profile photo</li>
+            <li>SkawFit user ID</li>
+            <li>Authentication information</li>
+            <li>Account timestamps and settings</li>
+          </ul>
+
+          <p>
+            This information supports authentication,
+            account management, synchronization, friends,
+            challenges, leaderboards, and program sharing.
+          </p>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section id="health">
+
+          <h2>
+            2. Health & Fitness Information
+          </h2>
+
+          <p>
+            Depending on the features you choose to use,
+            SkawFit may process information such as:
+          </p>
+
+          <ul>
+            <li>Age</li>
+            <li>Height and weight</li>
+            <li>Target weight</li>
+            <li>Activity level</li>
+            <li>Fitness goals</li>
+            <li>Training experience</li>
+            <li>Workout history</li>
+            <li>Exercise performance</li>
+            <li>Fitness progress</li>
+            <li>Body measurements and body-analysis information</li>
+            <li>Nutrition and calorie information</li>
+            <li>Food preferences and dietary restrictions</li>
+            <li>Recovery-related information</li>
+            <li>Workout and nutrition plans</li>
+            <li>Saved fitness programs</li>
+            <li>User-created workout and nutrition programs</li>
+          </ul>
+
+          <p>
+            This information is used to provide workout plans,
+            nutrition plans, progress tracking, personalization,
+            fitness analysis, and related app functionality.
+          </p>
+
+          <p>
+            SkawFit does not sell health or fitness information
+            or use it for advertising profiling.
+          </p>
+
+
+          <h3>
+            Android Health Connect
+          </h3>
+
+          <p>
+            When you explicitly grant permission, SkawFit may
+            access supported Android Health Connect information,
+            which may include:
+          </p>
+
+          <ul>
+            <li>Steps</li>
+            <li>Active energy</li>
+            <li>Sleep information</li>
+            <li>Heart rate</li>
+            <li>Resting heart rate</li>
+            <li>Weight</li>
+            <li>Other supported fitness metrics</li>
+          </ul>
+
+          <p>
+            Health Connect information is used for fitness
+            tracking, recovery insights, progress analysis,
+            and personalization.
+          </p>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section id="location">
+
+          <h2>
+            3. Location Information
+          </h2>
+
+          <h3>
+            Precise Location
+          </h3>
+
+          <p>
+            When you use location-based weather functionality
+            and grant location permission, SkawFit may obtain
+            your device's latitude and longitude.
+          </p>
+
+          <p>
+            This information may be transmitted to the
+            Open-Meteo weather API to provide weather information
+            relevant to your location.
+          </p>
+
+          <h3>
+            Approximate Location
+          </h3>
+
+          <p>
+            SkawFit may also process approximate location
+            information for features where a less precise
+            location is sufficient, including certain regional
+            or community-related functionality.
+          </p>
+
+          <p>
+            SkawFit does not use precise location to continuously
+            track your movements in the background.
+          </p>
+
+          <p>
+            You can manage location permissions through
+            Android system settings.
+          </p>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section id="camera">
+
+          <h2>
+            4. Camera & Speech Features
+          </h2>
+
+          <h3>
+            Camera
+          </h3>
+
+          <p>
+            SkawFit may request camera access for body-posture
+            or body-analysis functionality.
+          </p>
+
+          <p>
+            Where applicable, processing is performed on the
+            device. SkawFit does not intentionally upload or
+            permanently store raw camera video for posture
+            analysis.
+          </p>
+
+          <h3>
+            Speech
+          </h3>
+
+          <p>
+            Some SkawFit features may use speech recognition.
+            Microphone access is requested only when the relevant
+            feature is used.
+          </p>
+
+          <p>
+            Where supported by the device and operating system,
+            speech recognition is performed on-device.
+            SkawFit does not intentionally store raw microphone
+            recordings as user content.
+          </p>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section id="ai">
+
+          <h2>
+            5. Artificial Intelligence Features
+          </h2>
+
+          <p>
+            SkawFit may use artificial intelligence to assist
+            with personalized fitness and nutrition plan
+            generation.
+          </p>
+
+          <p>
+            When cloud processing is required, selected
+            information relevant to the requested feature may
+            be transmitted to SkawFit's backend infrastructure
+            and/or an AI processing provider.
+          </p>
+
+          <p>
+            This may include fitness goals, training preferences,
+            nutrition-related information, and other information
+            necessary to generate the requested result.
+          </p>
+
+          <p>
+            We aim to minimize unnecessary personal information
+            sent for AI processing. Where technically available,
+            SkawFit may use local or deterministic processing
+            instead of cloud AI processing.
+          </p>
+
+          <p>
+            AI-generated content is provided as fitness and
+            wellness assistance and is not medical diagnosis
+            or medical advice.
+          </p>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section id="sharing">
+
+          <h2>
+            6. User-Created Programs & Social Features
+          </h2>
+
+          <p>
+            SkawFit allows users to create workout, nutrition,
+            and combined fitness programs.
+          </p>
+
+          <p>
+            Depending on the available features, users may also
+            participate in:
+          </p>
+
+          <ul>
+            <li>Friends</li>
+            <li>Challenges</li>
+            <li>Leaderboards</li>
+            <li>Program sharing</li>
+            <li>Fitness scores</li>
+            <li>Streaks and progress features</li>
+          </ul>
+
+          <p>
+            When you voluntarily use these features, information
+            necessary for the selected feature may become visible
+            to participating SkawFit users.
+          </p>
+
+          <p>
+            For example, a shared fitness program may contain
+            the information necessary for another user to view
+            or import that program.
+          </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section id="services">
+
+          <h2>
+            7. Third-Party Services
+          </h2>
+
+          <p>
+            SkawFit uses technology providers that help operate
+            the application.
+          </p>
+
+          <p>
+            Depending on the feature, these services may include:
+          </p>
+
+          <ul>
+
+            <li>
+              <strong>Google Firebase</strong> —
+              authentication, databases, cloud functions,
+              storage, and notifications.
+            </li>
+
+            <li>
+              <strong>Firebase Crashlytics</strong> —
+              crash reporting, diagnostics, and application
+              performance information.
+            </li>
+
+            <li>
+              <strong>Google AdMob</strong> —
+              advertising and advertising-related services.
+            </li>
+
+            <li>
+              <strong>Open-Meteo</strong> —
+              weather information based on location required
+              for the weather feature.
+            </li>
+
+            <li>
+              <strong>Google AI / Gemini infrastructure</strong> —
+              selected cloud AI processing when required by
+              an AI-powered feature.
+            </li>
+
+          </ul>
+
+          <p>
+            These providers may process information according
+            to their own terms, privacy policies, technical
+            requirements, and applicable law.
+          </p>
+
+          <p>
+            SkawFit does not sell personal information.
+          </p>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section>
+
+          <h2>
+            8. Advertising, Analytics & Diagnostics
+          </h2>
+
+          <p>
+            SkawFit may display advertisements using Google AdMob.
+            Advertising-related technologies may process
+            information such as advertising identifiers,
+            device or app identifiers, basic device information,
+            and ad interaction information.
+          </p>
+
+          <p>
+            Where required, SkawFit uses applicable consent
+            mechanisms to manage advertising and privacy choices.
+          </p>
+
+          <p>
+            SkawFit may also use Firebase Crashlytics and related
+            technical services to understand crashes, errors,
+            application performance, and stability issues.
+          </p>
+
+          <p>
+            Technical information may include crash logs,
+            diagnostic information, application performance data,
+            device and operating-system information, application
+            version information, and technical identifiers.
+          </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section id="security">
+
+          <h2>
+            9. Data Security
+          </h2>
+
+          <p>
+            We use reasonable technical and organizational
+            measures designed to protect information against
+            unauthorized access, loss, misuse, alteration,
+            or disclosure.
+          </p>
+
+          <p>
+            Depending on the information and service, these
+            measures may include:
+          </p>
+
+          <ul>
+            <li>HTTPS/TLS encrypted communications</li>
+            <li>Firebase security controls</li>
+            <li>Authentication and authorization mechanisms</li>
+            <li>Secure local storage</li>
+            <li>Access controls</li>
+            <li>Server-side validation</li>
+            <li>Database security rules</li>
+          </ul>
+
+          <p>
+            No internet-based service can guarantee absolute
+            security. We continuously review and improve
+            SkawFit's security.
+          </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section id="retention">
+
+          <h2>
+            10. Data Retention
+          </h2>
+
+          <p>
+            We retain information only for as long as reasonably
+            necessary to provide requested functionality,
+            maintain the service, comply with legal obligations,
+            resolve disputes, enforce agreements, and protect
+            the security of the service.
+          </p>
+
+          <h3>
+            Account Data
+          </h3>
+
+          <p>
+            Account and profile information is generally retained
+            while your account remains active, unless deletion
+            or another applicable legal requirement requires
+            earlier removal.
+          </p>
+
+          <h3>
+            Fitness and App Data
+          </h3>
+
+          <p>
+            Workout history, nutrition information, saved plans,
+            manually created programs, and related fitness
+            information are retained to provide progress tracking
+            and personalization while your account remains active.
+          </p>
+
+          <h3>
+            Technical Data
+          </h3>
+
+          <p>
+            Crash, diagnostic, security, and performance information
+            may be retained according to the retention practices
+            of the relevant technical service providers.
+          </p>
+
+          <h3>
+            Legal and Security Retention
+          </h3>
+
+          <p>
+            Certain information may be retained for a limited
+            period where required by law, fraud prevention,
+            security, dispute resolution, or other legitimate
+            legal obligations.
+          </p>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section id="deletion">
+
+          <h2>
+            11. Account & Data Deletion
+          </h2>
+
+          <div class="notice">
+
+            <strong>
+              You can request permanent deletion of your
+              SkawFit account and associated personal data.
+            </strong>
+
+          </div>
+
+          <h3>
+            From the App
+          </h3>
+
+          <p>
+            Open:
+          </p>
+
+          <p>
+            <strong>
+              SkawFit → Settings → Delete Account
+            </strong>
+          </p>
+
+          <h3>
+            If You Cannot Access Your Account
+          </h3>
+
+          <p>
+            You can request deletion through our official
+            account deletion page:
+          </p>
+
+          <p>
+            <a
+              href="https://ferdayounes-oss.github.io/skawfit-account-deletion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SkawFit Account & Data Deletion
+            </a>
+          </p>
+
+          <h3>
+            Information Deleted
+          </h3>
+
+          <p>
+            Depending on the applicable data and service,
+            account deletion is designed to remove associated:
+          </p>
+
+          <ul>
+            <li>Account information</li>
+            <li>Profile information</li>
+            <li>Workout history</li>
+            <li>Nutrition information</li>
+            <li>Fitness plans</li>
+            <li>Fitness progress data</li>
+            <li>Saved preferences</li>
+            <li>User-created fitness programs</li>
+            <li>Account-associated cloud data</li>
+            <li>Other account-associated personal information</li>
+          </ul>
+
+          <p>
+            Certain information may remain temporarily when
+            necessary for legal, security, fraud-prevention,
+            or technical reasons and will be retained only for
+            the applicable period.
+          </p>
+
+          <p>
+            Once deletion is completed, account deletion
+            cannot be undone.
+          </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section id="rights">
+
+          <h2>
+            12. Your Privacy Choices
+          </h2>
+
+          <p>
+            Depending on your location and applicable law,
+            you may have rights regarding your personal
+            information, including:
+          </p>
+
+          <ul>
+            <li>Accessing information associated with your account</li>
+            <li>Requesting correction of inaccurate information</li>
+            <li>Requesting deletion</li>
+            <li>Withdrawing permissions</li>
+            <li>Controlling notification permissions</li>
+            <li>Controlling Android location permissions</li>
+            <li>Controlling Health Connect permissions</li>
+            <li>Managing applicable advertising consent choices</li>
+            <li>Objecting to or restricting certain processing where applicable</li>
+          </ul>
+
+          <p>
+            You can contact us regarding privacy questions
+            or requests.
+          </p>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section>
+
+          <h2>
+            13. Children's Privacy
+          </h2>
+
+          <p>
+            SkawFit is not designed for children under 13.
+            We do not knowingly collect personal information
+            from children under 13.
+          </p>
+
+          <p>
+            If we become aware that personal information from
+            a child under 13 has been collected without
+            appropriate authorization, we will take reasonable
+            steps to delete it.
+          </p>
+
+          <p>
+            If a different minimum age is required by applicable
+            law in your jurisdiction, the applicable legal
+            requirement will apply.
+          </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section>
+
+          <h2>
+            14. International Data Processing
+          </h2>
+
+          <p>
+            SkawFit uses cloud and technology providers that
+            may process information on servers located in
+            countries other than your country of residence.
+          </p>
+
+          <p>
+            Where applicable, appropriate safeguards and
+            contractual or technical measures are used for
+            international data transfers.
+          </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section>
+
+          <h2>
+            15. Changes to This Privacy Policy
+          </h2>
+
+          <p>
+            We may update this Privacy Policy when SkawFit's
+            features, technology, legal requirements, or data
+            practices change.
+          </p>
+
+          <p>
+            When material changes are made, we will update the
+            effective date at the top of this page and, where
+            appropriate, provide additional notice through
+            the application.
+          </p>
+
+          <p>
+            We encourage you to review this page periodically.
+          </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section id="contact">
+
+          <h2>
+            16. Contact Us
+          </h2>
+
+          <div class="contact">
+
+            <div>
+              <strong>Younes AITNASSAR</strong>
+            </div>
+
+            <div>
+              SkawLabs
+            </div>
+
+            <div>
+              Email:
+              <a href="mailto:ferdayounes@gmail.com">
+                ferdayounes@gmail.com
+              </a>
+            </div>
+
+            <div>
+              App: SkawFit: Workout & Diet Plan
+            </div>
+
+            <div>
+              Package:
+              <code>com.skaw.skawfit</code>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
     </div>
 
-    <p>At <span class="highlight">SkawFit</span> (Package Name: <span class="badge">com.skaw.skawfit</span>), we place the highest priority on protecting your privacy. This Privacy Policy document transparently outlines the nature of the data we collect, how we use it, its security scope, and your available choices regarding your data when using our application on Android.</p>
 
-    <h2>1. Identity Information and Account Data</h2>
-    <p>To enable you to maximize tracking and personalization features, we collect the following data:</p>
-    <ul>
-        <li><span class="highlight">Personal Account Data:</span> Name, email address, and profile picture when using Google Sign-In or Firebase Auth authentication.</li>
-        <li><span class="highlight">Physical and Fitness Profile:</span> Age, gender, height, current and target weight, physical activity level, adherence rate, body injuries (with manually entered additional details), and diet or food allergy profiles.</li>
-        <li><span class="highlight">Social Performance Data:</span> Unique user ID (<span class="highlight">SkawFit ID</span>), display name, fitness scores (<span class="highlight">BodyScore</span>), and daily streak (<span class="highlight">Streak</span>) visible to the digital community inside the app.</li>
-    </ul>
+    <footer>
+      © 2026 SkawLabs. All rights reserved.
+    </footer>
 
-    <h2>2. Android Health Connect Integration & Health Data</h2>
-    <p>The application integrates with the <span class="highlight">Android Health Connect</span> framework to read and sync vital health metrics (such as body weight, steps, calories burned, and heart rate) to monitor your progress and dynamically update your workout and nutrition plans.</p>
-    <ul>
-        <li>We only <span class="highlight">read</span> this data based on your explicit and direct permission.</li>
-        <li>Health Connect data is <span class="highlight">never</span> sold, rented, or shared with any third parties for advertising, marketing, or data brokerage purposes.</li>
-    </ul>
-
-    <h2>3. Camera Processing and Artificial Intelligence (Gemini)</h2>
-    <ul>
-        <li><span class="highlight">Camera for Posture Analysis:</span> The camera is used locally on your device exclusively to process and analyze body posture. <span class="highlight">No video frames or personal images are ever uploaded or stored</span> on cloud servers.</li>
-        <li><span class="highlight">Artificial Intelligence:</span> Only selected measurements and text data are sent to the artificial intelligence model (Gemini via Cloud Functions) to generate customized plans, without attaching your email address or explicit personal identity.</li>
-    </ul>
-
-    <h2>4. Third-Party Services and Technologies Used</h2>
-    <p>The application relies on certified infrastructure packages and services to ensure operational stability, including:</p>
-    <ul>
-        <li><span class="highlight">Google Firebase:</span> For database management (Firestore), cloud storage, authentication, and system notifications (FCM).</li>
-        <li><span class="highlight">Google AdMob:</span> To serve relevant ads with full compliance with European and local user consent frameworks (UMP) utilizing the Advertising ID.</li>
-        <li><span class="highlight">Firebase Crashlytics & Firelog:</span> To collect technical diagnostic crash reports completely isolated from your identity or sensitive health data.</li>
-        <li><span class="highlight">Open-Meteo API:</span> To retrieve local weather data based on coarse location to improve outdoor workout experiences.</li>
-    </ul>
-
-    <h2>5. Data Security and Protection</h2>
-    <p>We adopt advanced engineering security standards including encrypted secure storage (SecureStorage), strict encrypted communication protocols (HTTPS), and system-level blocks against unauthorized data backups to ensure the confidentiality of your information.</p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>SkawFit does not target individuals under the age of 13, and we do not knowingly collect personal data from this age group. If any data related to a child is discovered, it is deleted immediately.</p>
-
-    <h2>7. Your Rights and Account/Data Deletion</h2>
-    <p>You always have the right to full control over your data, including requesting the permanent deletion of your account and all associated records from our cloud servers.</p>
-    
-    <div class="cta-box">
-        <p style="margin: 0 0 10px 0; color: var(--text-color);">You can submit an instant automated deletion request through our official dedicated web page:</p>
-        <a href="https://ferdayounes-oss.github.io/skawfit-account-deletion/" target="_blank">Visit SkawFit Account & Data Deletion Page</a>
-    </div>
-    
-    <p style="margin-top: 15px;">You can also contact us directly via the email address below to request consent withdrawal or data deletion, and we will process your request within the specified timeframes:</p>
-
-    <h2>8. Contact the Developer</h2>
-    <p>For legal or privacy-related inquiries, please contact us via our official email address:</p>
-    <p style="text-align: center;"><span class="badge" style="font-size: 16px; padding: 6px 12px;">ferdayounes@gmail.com</span></p>
-
-    <div class="footer">
-        &copy; 2026 SkawFit. Developed by Younes AITNASSAR. All rights reserved.
-    </div>
-</div>
+  </div>
 
 </body>
 </html>
